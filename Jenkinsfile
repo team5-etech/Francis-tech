@@ -27,7 +27,20 @@ pipeline{
                 sh 'cat /etc/os-release'
             }
         }
+        stage('6-scriptcontrol'){
+            steps{
+                sh 'bash -x /var/lib/jenkins/workspace/Francis-demo/script.sh'
 
-     }
+                }
+
+            }
+         
+        }
+               
+    }           
+
+
+      
+    
 	  
- }
+ 
