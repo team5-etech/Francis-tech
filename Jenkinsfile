@@ -9,7 +9,7 @@ pipeline{
 	    }
 	    stage('2-systemcheck'){
 	        steps{
-	            sh 'sudo systemctl status jenlins'
+	            sh 'sudo systemctl status jenkins'
 	        }
 	    }
 	    stage('3-diskcheck'){
