@@ -34,10 +34,18 @@ pipeline{
                 }
 
             }
-         
+             stage('env-check'){
+                 steps{
+         echo "This is ${env.BUILD_NUMBER} build"
+            }
         }
+
+    }
+
+}        
+ 
                
-    }           
+              
 
 
       
